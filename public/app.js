@@ -34,6 +34,8 @@
     if (now) go(); else saveTimer = setTimeout(go, 300);
   }
   function defaultFormat() {
+    const q = params.get('lang');
+    if (q === 'de') return 'de';
     const nl = navigator.language || '';
     if (/^de\b/i.test(nl)) return 'de';
     if (/^en-US/i.test(nl)) return 'us';
@@ -243,7 +245,7 @@
     $('#checks').innerHTML = cs;
     const tips = t('tips')[f].map(x => `<li>${esc(x)}</li>`).join('');
     const tipsEl = $('#tips');
-    const wasOpen = tipsEl.dataset.init ? tipsEl.open : true;
+    const wasOpen = tipsEl.dataset.init ? tipsEl.open : window.matchMedia('(min-width: 1000px)').matches;
     tipsEl.innerHTML = `<summary>${esc(t('tips_h', { fmt: { de: 'lebenslauf', uk: 'cv-uk', us: 'resume-us' }[f] }))}</summary><ul>${tips}</ul><p class="dim small">${esc(t('pdf_hint'))}</p>`;
     tipsEl.open = wasOpen; tipsEl.dataset.init = '1';
     $('#offer').innerHTML = emailOffer();
