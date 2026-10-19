@@ -1,0 +1,11 @@
+{
+  "name": "hmsk-cv-builder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "German Lebenslauf, UK CV and US résumé from one form, in the browser.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/",
+    "start": "python3 -m http.server 8080 --directory public"
+  }
+}
