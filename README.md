@@ -36,7 +36,7 @@ python3 -m http.server 8080 --directory public   # or: npm start
 Any static web server works. `public/config.js` sets where the links back to hmsk.life point.
 Example CV: `/?demo=1` (in memory only, never touches what you stored). `?format=de|uk|us`, `?template=classic|modern|compact`.
 
-The fonts Martian Mono and Geist (SIL Open Font License, `public/fonts/`) are used when found; otherwise system fonts.
+Fonts (Newsreader, Public Sans for the app; Geist inside the CV document; SIL Open Font License) are in `public/fonts/`; the shared hmsk.life look is in `public/letterpress.css`.
 
 ## Tests
 
@@ -55,4 +55,4 @@ no account. Clearing the browser data deletes your CV, so keep a JSON backup.
 
 ## License
 
-MIT, see `LICENSE`. Fonts: SIL Open Font License, see `public/fonts/FONTS-LICENSE.txt`.
+MIT, see `LICENSE`. Fonts: SIL Open Font License, see `public/fonts/OFL-*.txt`.

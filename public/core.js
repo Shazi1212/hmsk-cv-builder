@@ -331,7 +331,7 @@
     s.extras = [Object.assign(blank('extras'), { heading: 'Volunteering', lines: '2023 | Mentor at a design bootcamp for career changers' })];
     s.sign.place = 'Berlin';
     // neutral placeholder instead of a real face
-    s.person.photo = 'data:image/svg+xml;base64,' + b64('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="#dfe8e2"/><circle cx="150" cy="150" r="70" fill="#9fb5a7"/><path d="M30 400c0-90 54-150 120-150s120 60 120 150z" fill="#9fb5a7"/></svg>');
+    s.person.photo = 'data:image/svg+xml;base64,' + b64('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><rect width="300" height="400" fill="#E2E6E9"/><circle cx="150" cy="150" r="70" fill="#A9B4C0"/><path d="M30 400c0-90 54-150 120-150s120 60 120 150z" fill="#A9B4C0"/></svg>');
     return s;
   }
 

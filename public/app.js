@@ -186,7 +186,7 @@
     const levels = ['Native', 'Muttersprache', 'C2', 'C1', 'B2', 'B1', 'A2', 'A1', 'Fluent', 'Conversational', 'verhandlungssicher', 'fließend', 'Grundkenntnisse']
       .map(v => `<option value="${v}">`).join('');
     return sec('person', 's_person', person, true) +
-      sec('statement', 's_statement', field('statement', '--text', { area: true, rows: 4, ph: t('statement_ph') }) + `<p class="dim small">${esc(t('statement_note'))}</p>`, true) +
+      sec('statement', 's_statement', field('statement', 'Text', { area: true, rows: 4, ph: t('statement_ph') }) + `<p class="dim small">${esc(t('statement_note'))}</p>`, true) +
       sec('exp', 's_exp', exp, true) + sec('edu', 's_edu', edu, true) + sec('skills', 's_skills', skills, true) +
       sec('langs', 's_langs', langs, true) + sec('extras', 's_extras', extras, state.extras.length > 0) +
       `<div class="de-only">${sec('sign', 's_sign', sign, true)}</div>` + sec('data', 's_data', data, false) +
@@ -246,7 +246,7 @@
     const tips = t('tips')[f].map(x => `<li>${esc(x)}</li>`).join('');
     const tipsEl = $('#tips');
     const wasOpen = tipsEl.dataset.init ? tipsEl.open : window.matchMedia('(min-width: 1000px)').matches;
-    tipsEl.innerHTML = `<summary>${esc(t('tips_h', { fmt: { de: 'lebenslauf', uk: 'cv-uk', us: 'resume-us' }[f] }))}</summary><ul>${tips}</ul><p class="dim small">${esc(t('pdf_hint'))}</p>`;
+    tipsEl.innerHTML = `<summary>${esc(t('tips_h', { fmt: t('f_' + f) }))}</summary><ul>${tips}</ul><p class="dim small">${esc(t('pdf_hint'))}</p>`;
     tipsEl.open = wasOpen; tipsEl.dataset.init = '1';
     $('#offer').innerHTML = emailOffer();
   }
