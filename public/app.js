@@ -252,7 +252,7 @@
   }
   function emailOffer() {
     if (DEMO || state.meta.exports < 1 || state.meta.offerHidden) return '';
-    const href = (CFG.site || '') + (lang === 'de' ? '/de/?topic=cv-builder#contact' : '/?topic=cv-builder#contact');
+    const href = (CFG.site || '') + (lang === 'de' ? '/de/newsletter/?topic=cv-builder' : '/subscribe/?topic=cv-builder');
     return `<aside class="offer"><p><span class="ps">&gt;</span> ${esc(t('email_offer'))} <a href="${esc(href)}">${esc(t('email_link'))}</a></p>
       <p class="dim small">${esc(t('email_honest'))}</p><button type="button" class="linkish small" data-act="hide-offer">${esc(t('email_hide'))}</button></aside>`;
   }

@@ -88,7 +88,7 @@ window.CVI18N = {
     },
     // email moment after the first PDF
     email_offer: 'Want an email when new templates or formats (e.g. Europass, cover letter) arrive?', email_link: 'Tell me',
-    email_honest: 'There is no newsletter yet. If enough people ask, I will build it.', email_hide: 'Hide',
+    email_honest: 'Double opt-in, a few emails a year, one-click unsubscribe.', email_hide: 'Hide',
   },
   de: {
     app: 'CV Builder',
@@ -174,6 +174,6 @@ window.CVI18N = {
       ],
     },
     email_offer: 'Eine E-Mail, wenn neue Vorlagen oder Formate (z. B. Europass, Anschreiben) kommen?', email_link: 'Sagen Sie Bescheid',
-    email_honest: 'Einen Newsletter gibt es noch nicht. Wenn genug Leute fragen, baue ich ihn.', email_hide: 'Ausblenden',
+    email_honest: 'Double-Opt-in, ein paar E-Mails im Jahr, Abmelden mit einem Klick.', email_hide: 'Ausblenden',
   },
 };
